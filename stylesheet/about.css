@@ -1,0 +1,17 @@
+/* about */
+
+#about .list1{
+    display: flex;
+}
+#about .list{
+    display: flex;
+    margin: 0 0 -10rem 0;
+}
+.list1 p , .list .com-info{
+    font-size: 2.6rem;
+    padding:18rem 5rem;
+    text-align: justify;
+}
+.com-info h1{
+    padding: 2rem 0;
+}
