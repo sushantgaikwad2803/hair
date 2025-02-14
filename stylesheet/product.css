@@ -6,13 +6,9 @@
     gap: 1.5rem;
     margin: 3rem;
   }
-
-  #product-container .product-img {
-    background-color: #aaaaaa;
-  }
   
   #product-container .product-img img {
-    height: 140vh;
+    height: 132vh;
     width: 47.2vw;
   }
   
@@ -22,34 +18,20 @@
     grid-auto-rows: 50vh;
     gap: 1.5rem;
   }
-  
-  .product-img1 .product-png {
-    background-color: #aaaaaa;
-  }
-
   .product-img1 .product-png img{
-    background-color: #aaaaaa;
     height: 50vh;
     width: 51vh;
   }
   
   .product-img1 .product1 img{
-    background-color: #aaaaaa;
-    height: 87vh;
+    height: 80vh;
     width: 47.4vw;
     margin-top: 1.5rem;
   }
-  
-  /* #product-container p{
-    font-size: 1rem;
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: -50% , -50%;
-  } */
+
 /*  */
 #product {
-    margin-top: 6rem ;
+    margin-top: 0rem ;
 }
 #product h1{
     font-size: 3rem;
