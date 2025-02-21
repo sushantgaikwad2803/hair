@@ -49,6 +49,6 @@
 #map iframe{
     width: 100%;
     padding-top: 6rem;
-    margin-bottom: -11rem;
+    /* margin-bottom: rem; */
 }
 

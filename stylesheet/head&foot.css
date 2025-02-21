@@ -33,7 +33,8 @@ body {
     background: white;
     color: var(--text-color);
     display: flex;
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    max-width: 2560px;
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -195,9 +196,9 @@ header.cover #nav ul li a {
 
 /* service */
 
-#service {
+/* #service {
     margin-top: 10rem;
-}
+} */
 
 #service .slider {
     display: grid;
@@ -259,19 +260,20 @@ header.cover #nav ul li a {
     transform: translate(-50%, -50%);
 }
 
+#footer .footer-list #list h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+
 #footer .footer-list .footer-logo img {
     width: 22rem;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-#footer .footer-list .list h1 {
-    font-size: 3rem;
-    text-align: center;
-    padding: 2rem;
-    text-transform: uppercase;
 }
 
 #footer .footer-list .list ul {
@@ -290,13 +292,6 @@ header.cover #nav ul li a {
     color: var(--text-color);
 }
 
-#footer .footer-list .address h1 {
-    font-size: 3rem;
-    padding: 3rem;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 #footer .footer-list .address p {
     padding: 2.5rem;
     font-size: 2rem;
@@ -304,13 +299,6 @@ header.cover #nav ul li a {
     cursor: pointer;
     text-align: center;
     line-height: 3rem;
-}
-
-#footer .footer-list .footer-icon h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    padding: 3rem;
-    text-align: center;
 }
 
 #footer .footer-list .footer-icon a i {
@@ -336,6 +324,78 @@ header.cover #nav ul li a {
 
 
 /* meadia query  */
+
+
+@media (max-width: 2560px) {
+
+    header.cover .logo img {
+        width: 10vw;
+        padding: 0.4rem;
+    }
+    
+    #service .all-service {
+        position: relative;
+        top: 42%;
+        left: 50.5%;
+        transform: translate(-50%, -50%);
+        padding: 5rem;
+    }
+
+    #footer .footer-list #list {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #footer .footer-list #list h1 {
+        font-size: 2.4rem;
+        padding: 1rem;
+    }
+
+    #footer .footer-list .list ul li {
+        font-size: 1.9rem;
+        padding: 0.2rem;
+    }
+
+    #footer .footer-list .address p{
+        font-size: 1.9rem;
+    }
+
+    #footer .footer-list .footer-icon a i {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:1440px) {
+ 
+    #service .all-service {
+        position: relative;
+        top: 48%;
+        left: 50.5%;
+        transform: translate(-50%, -50%);
+        padding: 5rem;
+    }
+
+    #footer .footer-list #list {
+        position: relative;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #footer .footer-list {
+        padding: 1rem;
+    }
+
+    #footer .footer-list .footer-logo img {
+        width: 22rem;
+        position: relative;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 
 @media (max-width: 992px) {
     #nav ul {

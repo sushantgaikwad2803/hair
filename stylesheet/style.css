@@ -1,7 +1,7 @@
 /* welcome */
 
 #welcome {
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 #welcome h1 {
@@ -334,6 +334,77 @@
 
 
 /* meadia query  */
+
+@media (max-width: 2560px) {
+    #welcome .wel-div .info span {
+        font-size: 7.3rem;
+    }
+
+    #welcome .wel-div .info {
+        font-size: 2.3rem;
+    }
+
+    #product .img-list #p2 {
+        position: relative;
+        top: -62%;
+        left: 29%;
+        transform: translate(-50%, -50%);
+        color: var(--text-color);
+        font-size: 2rem;
+        font: x-large;
+    }
+
+    #treatment .hair-slide {
+        padding: 8rem;
+        /* overflow: hidden; */
+        display: grid;
+        grid-gap: 6rem;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-auto-rows: 620px;
+        grid-auto-flow: dense;
+    }
+
+    #treatment .hair-slide .hair-info {
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width:1440px) {
+    #welcome .wel-div .info span {
+        font-size: 8.2rem;
+    }
+
+    #welcome .wel-div .info {
+        font-size: 2.5rem;
+    }
+
+    #product .img-list #p2 {
+        position: relative;
+        top: -68%;
+        left: 22%;
+        transform: translate(-50%, -50%);
+        color: var(--text-color);
+        font-size: 2rem;
+        font: x-large;
+    }
+
+    #treatment .hair-slide {
+        padding: 8rem;
+        /* overflow: hidden; */
+        display: grid;
+        grid-gap: 6rem;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-auto-rows: 500px;
+        grid-auto-flow: dense;
+    }
+
+    #treatment .hair-slide .hair-info {
+        font: 400;
+        font-size: 2.4rem;
+        text-align: justify;
+        padding: 1rem;
+    }
+}
 
 @media (max-width: 992px) {
     #nav ul {
