@@ -236,54 +236,55 @@
     margin: auto;
 }
 
-#png .collect {
-    padding: 8rem;
-    /* overflow: hidden; */
-    display: grid;
-    grid-gap: 6rem;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-auto-rows: 580px;
-    grid-auto-flow: dense;
+#png .our-colletion{
+    display: flex;
+    margin: 8rem;
 }
 
-.collect .pro {
+.our-colletion .Shampoo-png {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../gallery/our.jpg);
     background-position: center;
     background-size: cover;
-    transition: 5s;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 45vw;
+    height: 55vh;
 }
 
-.collect .pro h3,
-.pro1 h3 {
+.our-colletion .mask-png{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../gallery/our1.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55vh;
+    margin-top: 2rem;
+}
+
+.our-colletion h3 {
     color: var(--font-color);
     font-size: 5rem;
     font: 800;
 }
 
-.collect .pro1 {
+.our-colletion .treatement-png {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../gallery/our1.jpg);
     background-position: center;
     background-size: cover;
-    transition: 5s;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 2rem;
+    width: 100%;
 }
 
-.collect .pro1:hover,
-.collect .pro:hover {
-    scale: 1.1;
-}
 
-.collect .pro1:hover h3,
-.collect .pro:hover h3 {
-    color: var(--back-color);
-}
 
 /* hair treatment */
 
