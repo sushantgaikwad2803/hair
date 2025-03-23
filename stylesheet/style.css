@@ -7,8 +7,8 @@
 #welcome h1 {
     font-size: 5rem;
     margin-top: 4rem;
+    font-weight: 500;
     padding: 6rem;
-    font: 300;
     text-align: center;
 }
 
@@ -58,7 +58,7 @@
 
 #product h1 {
     font-size: 4rem;
-    font: 300;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -223,7 +223,7 @@
 
 #png h1 {
     font-size: 4rem;
-    font: 300;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -242,8 +242,8 @@
 }
 
 .our-colletion .Shampoo-png {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../gallery/our.jpg);
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../gallery/shampoo.jpg);
+    background-position: top;
     background-size: cover;
     cursor: pointer;
     display: flex;
@@ -254,7 +254,7 @@
 }
 
 .our-colletion .mask-png{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../gallery/our1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../gallery/mask.jpeg);
     background-position: center;
     background-size: cover;
     cursor: pointer;
@@ -273,7 +273,7 @@
 }
 
 .our-colletion .treatement-png {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../gallery/our1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../gallery/shampoosetion.jpg);
     background-position: center;
     background-size: cover;
     cursor: pointer;
@@ -296,7 +296,7 @@
 
 #treatment h1 {
     font-size: 4rem;
-    font: 300;
+    font-weight: 500;
     text-align: center;
     padding-top: 3rem;
 }
@@ -467,11 +467,11 @@
     }
 
     #product .img-list {
-        grid-auto-columns: calc((110% / 1) - 28px);
-        gap: 1.4rem;
+        grid-auto-columns: calc((100% / 1) - 1px);
+        gap: 1rem;
         overflow: hidden;
         scroll-behavior: smooth;
-        margin: 0 -3rem;
+        margin: 0 -2rem;
         padding: 0 1rem;
     }
 
@@ -497,7 +497,7 @@
         height: 280px;
         object-fit: cover;
         text-decoration: none;
-        left: 55%;
+        left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         box-shadow: 0 0 2rem 0 #fff;
@@ -511,6 +511,13 @@
 
     #product .btn {
         font-size: 1.6rem;
+        padding: 0.8rem 3rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10rem 10rem;
+        letter-spacing: 0.1rem;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
     }
 
     #img {
@@ -527,7 +534,7 @@
     }
 
     #png {
-        margin-top: 9rem;
+        margin-top: 4rem;
     }
 
     #png h1 {
@@ -538,19 +545,9 @@
         width: 14rem;
     }
 
-    #png .collect {
-        padding: 5rem 1rem;
-        /* overflow: hidden; */
-        display: grid;
-        grid-gap: 4rem;
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-        grid-auto-rows: 480px;
-        grid-auto-flow: dense;
-    }
-
     #treatment h1 {
         font-size: 2.8rem;
-        padding-top: 3rem;
+        padding: 3rem;
     }
 
     #treatment h1::after {
@@ -686,6 +683,40 @@
 
     #png h1::after {
         width: 14rem;
+    }
+
+    #png .our-colletion{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .product-collection {
+        display: flex;
+        margin-top: 5rem;
+    }
+
+    .our-colletion .Shampoo-png {
+        width: 100%;
+        height: 35vh;
+    }
+    
+    .our-colletion .mask-png{
+        width: 100%;
+        height: 35vh;
+        margin-top: 0rem;
+        margin-left: 1rem;
+    }
+    
+    .our-colletion h3 {
+        font-size: 2rem;
+    }
+    
+    .our-colletion .treatement-png {
+        margin-left: 0rem;
+        margin-top: 1rem;
+        width: 100%;
+        height: 40vh;
     }
 
     #treatment h1 {
