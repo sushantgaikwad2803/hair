@@ -1,0 +1,122 @@
+/* product  */
+#product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+    grid-auto-rows: 140vh;
+    gap: 1.5rem;
+    margin: 3rem;
+  }
+  
+  #product-container .product-img img {
+    height: 132vh;
+    width: 47.2vw;
+  }
+  
+  .product-img1 .product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(10px , 1fr));
+    grid-auto-rows: 50vh;
+    gap: 1.5rem;
+  }
+  .product-img1 .product-png img{
+    height: 50vh;
+    width: 51vh;
+  }
+  
+.product-img1 .product1 img{
+  height: 80vh;
+  width: 47.4vw;
+  margin-top: 1.5rem;
+}
+
+/*  */
+#product h1{
+  font-size: 3rem;
+  padding: 3rem;
+  text-align: center;
+}
+#product .product-line {
+  padding: 5rem 22rem;
+}
+#product .img-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(260px , 1fr));
+  grid-auto-rows: 290px;
+  grid-auto-flow: dense;
+  gap: 6rem;
+}
+#product .png-item{
+  cursor: pointer;
+  box-shadow: 0 0 1rem 0  gray;
+}
+#product .png-item img{
+  width: 220px;
+  height: 220px;
+  position: relative;
+  left: 50%;
+  top: 38%;
+  transform: translate(-50%, -50%);
+}
+#product .img-list #p2 {
+  position: relative;
+  /* display: none; */
+  top: -70%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color);
+  font-size: 2rem;
+  font: x-large;
+}
+#product .png-item h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+#product .png-item #price{
+  display: none;
+}
+
+@media (max-width:480px) {
+
+  #product-container{
+    display: block;
+    margin: 1rem;
+  }
+
+  #product-container .product-img img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .product-img1 .product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(10% , 1fr));
+    grid-auto-rows: 30vh;
+    gap: 0rem;
+  }
+  .product-img1 .product-png img{
+    height: 30vh;
+    width: 23.2vh;
+    margin-top: 0.4rem;
+  }
+  
+  .product-img1 .product1 img{
+    height: 60%;
+    width: 100%;
+    margin-top: 1rem 
+  }
+
+  #product .product-line {
+    padding: 2rem 2rem;
+  }
+  #product .png-item{
+    cursor: pointer;
+    box-shadow: 0 0 1rem 0  gray;
+  }
+  #product .img-list #p2 {
+    font-size: 1.6rem;
+  }
+  #product .png-item h3 {
+    padding: 0rem;
+  }
+}
